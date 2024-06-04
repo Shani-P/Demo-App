@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Le Petit Chateau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+
+
+     <!--iOS support-->
+     <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+     <meta name="apple-mobile-web-app-status-bar" content="#eff542">
+     <meta name="theme-color" content="#eff542">
+</head>
+
+<!--top nav-->
+
+<body class="grey lighten-4">
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/"><span>Le Petit Chateau</span></a>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+        </div>
+    </nav>
+
+    <!--side nav (menu)-->
+
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">online </a></li>
+        <li><a href="/" class="waves-effect">
+                <i class="material-icons">account_circle</i>Profile</a>
+        </li>
+        <li><a href="/" class="waves-effect">
+                <i class="material-icons">local_dining</i>Menu</a>
+        </li>
+        <li><a href="contact.html" class="waves-effect">
+                <i class="material-icons">contacts</i>Contacts</a>
+        </li>
+    </ul>
+
+    <!--reservation list-->
+    <div class="reservations container grey-text text-darken-1">
+        <h6>Resevations</h6>
+        
+    </div>
+
+    <!--add reservations button-->
+    <div class="center">
+        <a class="btn-floating btn-small add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <!--add new reservation form-->
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-reservation container section">
+            <h6>New Reservation</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input placeholder="e.g. John Doe" id="name" type="text" class="validate" autocomplete="off">
+                <label for="name">Name</label>
+            </div>
+
+            <div class="input-field">
+                <input placeholder="7pm" id="time" type="text" class="validate" autocomplete="off">
+                <label for="time">Select Time </label>
+            </div>
+            <div class="input-field">
+                <input placeholder="08/16/2024" id="date" type="text" class="validate" autocomplete="off">
+                <label for="date">Select Date </label>
+            </div>
+            <div class="input-field center">
+                <button class="btn-small">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="/js/ui.js"> </script>
+    <script type="module" src="/dist/bundle.js"> </script>
+
+</body>
+</html>

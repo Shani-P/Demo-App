@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Le Petit Chateau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+</head>
+<!--top nav-->
+
+<body class="grey lighten-4">
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/"><span>Le Petit Chateau</span></a> 
+        </div>
+    </nav>
+<!--end of top nav-->
+<h3 align="center">Login</h3>
+<!--Login Form-->
+<form class="add-reservation container section" id="login-form" >
+   
+    <div class="container">
+      <label for="email" ><b>Email</b></label>
+      <input type="text" placeholder="Enter Email Address" name="email" required><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <a href="page.html"><button type="submit">Login</button></a>
+      <label><br>
+        <span id="signup-form">Sign Up</span>
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  <!--end of login form-->
+   
+  <!--Register side Form-->
+  <!--add new student form-->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-reservation container section" id="signup-form">
+        <h6>Register </h6>
+        <div class="divider"></div>
+        <div class="input-field">
+            <input placeholder="Enter Email " id="email" type="text" class="validate" autocomplete="">
+            <label for="name">Email Address</label>
+        </div>
+
+        <div class="input-field">
+            <input placeholder="Enter Password" id="password" type="text" class="validate" autocomplete="off">
+            <label for="time">Create Password </label>
+        </div>
+        <div class="input-field">
+            <input placeholder="Confirm Password" id="password" type="text" class="validate" autocomplete="off">
+            <label for="date">Confirm Password </label>
+        </div>
+        <div class="input-field center">
+            <button class="btn-small" type="submit">Create Account</button>
+        </div>
+    </form>
+</div>
+
+    <script type="module" src="/dist/bundle.js"> </script>
+</body>
+</html>

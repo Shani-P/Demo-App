@@ -7,11 +7,10 @@ import { renderReservation, removeReservation } from '../js/ui';
 
 //sign up
 const signupFormTrigger = document.getElementById('signup-form-trigger');
-const sideForm = document.getElementById('side-form');
-
 signupFormTrigger.addEventListener('click', () => {
   sideForm.classList.toggle('active');
 });
+const sideForm = document.getElementById('side-form');
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

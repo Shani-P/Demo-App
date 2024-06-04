@@ -21,6 +21,11 @@ nav .sidenav-trigger{
   margin: 0;
 }
 
+/*sign up*/
+.side-form.active {
+  display: block; /* or any other styles you want to apply */
+}
+
 /* reservation styles */
 .reservation{
   margin-top: 20px;

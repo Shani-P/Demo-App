@@ -51,7 +51,7 @@ form.addEventListener('submit', (evt)=>{
 firebase.onSnapshot(colRef,(snapshot)=>{
   let reservations = [];
   snapshot.docs.forEach(doc => {
-    reservations.push({ ...doc.data(), name: doc.data().name, time: doc.data().time, date: doc.data().date });
+    reservations.push({ ...doc.data(), id: doc.id });
   });
   console.log(reservations);
 });
@@ -59,10 +59,10 @@ firebase.onSnapshot(colRef,(snapshot)=>{
 onSnapshot(colRef, (snapshot)=> {
   snapshot.docChanges().forEach(change => {
     if(change.type === "added"){
-      renderReservation(change.doc.data(), change.doc.name, change.doc.time, change.doc.date);
+      renderReservation(change.doc.data(), change.doc.id,);
     }
     if(change.type === "removed"){
-      removeReservation(change.doc.name);
+      removeReservation(change.doc.id);
     }
   })
 })

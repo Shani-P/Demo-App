@@ -5,12 +5,8 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,sig
 //import from javascript folder
 import { renderReservation, removeReservation } from '../js/ui';
 
-//sign up
-const signupFormTrigger = document.getElementById('signup-form-trigger');
-signupFormTrigger.addEventListener('click', () => {
-  sideForm.classList.toggle('active');
-});
-const sideForm = document.getElementById('side-form');
+
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -21,6 +17,8 @@ const firebaseConfig = {
   messagingSenderId: "289082882950",
   appId: "1:289082882950:web:ed512d99da25991c0d8a07"
 };
+
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig); 
@@ -113,3 +111,11 @@ btnLogin.addEventListener('click', (e) => {
         window.location.href ='/page.html';
     });
 })
+
+//sign up
+const signupFormTrigger = document.getElementById('signup-form-trigger');
+signupFormTrigger.addEventListener('click', () => {
+  sideForm.classList.toggle('active');
+});
+const sideForm = document.getElementById('side-form');
+
